@@ -5,28 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nouveau membre</title>
+
+    <script src="./form.js"></script>
   </head>
   <body>
     <form name="newuser">
       <fieldset>
         <label for="nom">Nom</label>
-        <input type="text" id="nom" name="nom" placeholder="Nom" />
+        <input type="text" ORCID="nom" name="nom" placeholder="Nom" />
       </fieldset>
       <fieldset>
         <label for="prenom">Prénom</label>
-        <input type="text" id="prenom" name="prenom" placeholder="Prénom" />
+        <input type="text" ORCID="prenom" name="prenom" placeholder="Prénom" />
       </fieldset>
       <fieldset>
         <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="Email" />
+        <input type="email" ORCID="email" name="email" placeholder="Email" />
       </fieldset>
       <fieldset>
-        <label for="DOI">DOI</label>
-        <input type="text" id="DOI" name="DOI" placeholder="DOI" />
+        <label for="ORCID">ORCID</label>
+        <input type="text" ORCID="ORCID" name="ORCID" placeholder="ORCID" />
       </fieldset>
-      <button>
+      <button type="button" onclick="search()">
         <span>Chercher</span>
       </button>
+      <div id="articles"></div>
     </form>
   </body>
 </html>
